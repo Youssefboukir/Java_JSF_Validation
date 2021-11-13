@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form id="form">  
+            <h:outputLabel for="username">Date:</h:outputLabel>  
+            <h:inputText id="date" value="#{user.date}">  
+                <f:validateBean/> 
+            </h:inputText><br/>  
+            
+              <h:outputLabel for="username">CNE:</h:outputLabel>  
+              <h:inputText id="CNE" value="#{user.CNE}">  
+                <f:validateBean/>  
+            </h:inputText><br/>  
+            
+             <h:outputLabel for="username">ville:</h:outputLabel>  
+              <h:inputText id="ville" value="#{user.ville}">  
+                <f:validateBean/>  
+            </h:inputText><br/> 
+            
+           <h:outputLabel for="username">bourse :</h:outputLabel>  
+              <h:inputText id="bourse" value="#{user.bourse}">  
+                <f:validateBean/>  
+            </h:inputText><br/> 
+            
+            <h:commandButton value="OK" action="#{UserController.insert(user)}"></h:commandButton>  
+        </h:form>  
+    </h:body>
+</html>
+
